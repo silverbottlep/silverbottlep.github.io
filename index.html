@@ -1,1 +1,289 @@
-Hello World
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://www.cs.unc.edu/~eunbyung/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Eunbyung Park</title>
+  <link rel="stylesheet" type="text/css" href="./Eunbyung Park_files/styles.css">
+<script>console.inject = function (library) {
+      
+      function getURLs() {
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange = function() {
+          if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+            if(xmlhttp.status == 200){
+              var libraries = JSON.parse(xmlhttp.responseText).results;
+              var foundLib = libraries.reduce(function (found, item) {
+                if (item.name === library || item.name === library + '.js') {
+                  found = item;
+                } 
+                return found;
+              }, undefined);
+
+              if (foundLib) {
+                var url = foundLib.latest.replace('http:', 'https:');
+                var libScript =document.createElement('script');
+                libScript.src = url;
+                document.head.appendChild(libScript);
+                return console.log('library injected from ' + url);
+              } else {
+                console.log('library "' + library + '" not found');
+              }
+            }
+            else { console.log(XMLHttpRequestlhttp.status)}
+          }
+        }
+
+        var searchString = 'https://api.cdnjs.com/libraries?search=' + library;
+        xmlhttp.open("GET", searchString, true);
+        xmlhttp.send();
+      }
+
+      getURLs();
+    }</script></head>
+
+<body>
+	<div id="w">
+		<header class="clearfix">
+			<div id="info">			
+				<h1><span itemprop="name">Eunbyung Park</span></h1>
+				<small>
+				  <span itemprop="addressLocality">Chapel Hill</span>, 
+				  <span itemprop="addressRegion">North Carolina</span>, 
+				  <span itemprop="addressCountry">USA</span>
+				</small>
+				<small><span itemprop="email">firstname [at] cs [dot] unc [dot] edu</span></small>
+				<br>
+				<br>
+				<br>
+				<br>
+
+</div>
+<div id="photo"> <img src="./Eunbyung Park_files/top.jpg" itemprop="image"> </div>
+		</header>
+
+<div id="info">
+<h2>About</h2>
+<p> I am an applied scientist at <a href="https://msturing.org/about">Microsoft</a> <a href="https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/">Project</a> <a href="https://www.microsoft.com/en-us/research/blog/microsoft-turing-universal-language-representation-model-t-ulrv2-tops-xtreme-leaderboard/">Turing</a>. Prior to joining Microsoft, I was a research scientist at <a href="http://nuro.ai/">Nuro</a>. I completed my PhD at University of North Carolina at Chapel Hill in 2019, advised by Prof <a href="http://acberg.com/">Alex Berg</a>. My PhD research focus was to directly optimize generalization performance through meta learning and its application to visual object tracking. My current research interests span the field of machine learning, meta-learning, generative models, reinforcement learning, and their applications related to computer vision and natural language processing.</p>
+
+		<br>
+			<h2>Working Experience</h2>
+		<br>
+		<p> Applied Scientist, <a href="https://msturing.org/about">Microsoft</a> <a href="https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/">Project</a> <a href="https://www.microsoft.com/en-us/research/blog/microsoft-turing-universal-language-representation-model-t-ulrv2-tops-xtreme-leaderboard/">Turing</a> (Sep. 2020 - ) </p>
+		<p> Research Scientist, <a href="http://nuro.ai/">Nuro</a> (June. 2019 - Aug 2020)</p>
+		<p> Research Intern, <a href="https://deepmind.com/">Google DeepMind</a> (June. 2018 - Oct. 2018) </p>
+		<p> Research Intern, <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (June. 2017 - Aug. 2017) </p>
+		<p> Research Intern, <a href="http://www.adobe.com/technology.html">Adobe Research</a> (June. 2016 - Aug 2016) </p>
+		<p> Research Intern, <a href="http://www.hpl.hp.com/">HP Labs</a> (June. 2015 - Aug 2015)</p>
+</div>
+
+		<br>
+		<br>
+			<h2>Professional Activities</h2>
+		<br>
+		<p> Organizer: ImageNet Large Scale Visual Recognition Challenge <a href="http://image-net.org/challenges/beyond_ilsvrc">(ILSVRC 2017)</a>, Low-Power Image Recognition Challenge <a href="https://rebootingcomputing.ieee.org/lpirc">(LPIRC 2017, 2018)</a> </p>
+		<br>
+		<br>
+			<h2>Publications [<a target="_blank" href="https://scholar.google.com/citations?user=k_qgJ80AAAAJ&amp;hl=en">google scholar</a>] </h2> 
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> Rotationally-Temporally Consistent Novel View Synthesis of Human Performance Video </div>
+<div class="description"> European Conference on Computer Vision ( ECCV 2020 )<br>
+YoungJoong Kwon, Stefano Petrangeli, Dahun Kim, Haoliang Wang, <b>Eunbyung Park</b>, Vishy Swaminathan, Henry Fuchs </div>
+<div class="description"> [<a target="_blank" href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123490375.pdf">Paper</a>]
+</div></td>
+</tr> 
+</tbody></table>
+
+		<br>
+		<br>
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> Unsupervised Doodling and Painting with Improved SPIRAL </div>
+<div class="description"> Machine Learning for Creativity and Design ( NeurIPS 2019 Workshop ) <br>
+John F. J. Mellor, <b>Eunbyung Park</b>, Yaroslav Ganin, Igor Babuschkin, Tejas Kulkarni, Dan Rosenbaum, Andy Ballard, Theophane Weber, Oriol Vinyals, S. M. Ali Eslami </div>
+<div class="description"> [<a target="_blank" href="https://arxiv.org/abs/1910.01007">Paper</a>]
+[<a target="_blank" href="https://learning-to-paint.github.io/">Animated Paper</a>]</div>
+</td>
+</tr> 
+</tbody></table>
+
+		<br>
+		<br>
+
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> Meta-Curvature </div>
+<div class="description"> Neural Information Processing Systems ( NeurIPS 2019 )<br>
+<b>Eunbyung Park</b>, Junier B. Oliva </div>
+<div class="description"> [<a target="_blank" href="https://arxiv.org/abs/1902.03356">Paper</a>]
+[<a target="_blank" href="https://github.com/silverbottlep/meta_curvature">Code</a>]</div>
+</td>
+</tr> 
+</tbody></table>
+
+		<br>
+		<br>
+
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> Three years of Low-Power Image Recognition Challenge</div>
+<div class="description"> Design, Automation and Test in Europe Conference ( DATE 2018 Exhibition )<br>
+Kent Gauen, Ryan Dailey, Yung-Hsiang Lu, <b>Eunbyung Park</b>, Wei Liu, Alexander C Berg, Yiran Chen <br> </div>
+<div class="description"> [<a target="_blank" href="https://ieeexplore.ieee.org/document/8342099">Paper</a>]
+</div></td>
+</tr> 
+</tbody></table>
+
+		<br>
+		<br>
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> Meta-Tracker: Fast and Robust Online Adaptation for Visual Object Trackers</div>
+<div class="description"> European Conference on Computer Vision ( ECCV 2018 )<br>
+<b>Eunbyung Park</b>, Alexander C. Berg<br> </div>
+<div class="description"> [<a target="_blank" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Eunbyung_Park_Meta-Tracker_Fast_and_ECCV_2018_paper.pdf">Paper</a>]
+[<a target="_blank" href="https://github.com/silverbottlep/meta_trackers">Code</a>]</div>
+</td>
+</tr> 
+</tbody></table>
+
+		<br>
+		<br>
+
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> A Dataset for Developing and Benchmarking Active Vision</div>
+<div class="description">  International Conference on Robotics and Automation ( ICRA 2017 )<br>
+Phil Ammirato, Patrick Poirson, <b>Eunbyung Park</b>, Jana Kosecka, Alexander C. Berg<br> </div>
+<div class="description"> [<a target="_blank" href="https://arxiv.org/abs/1702.08272">Paper</a>] [<a target="_blank" href="http://www.cs.unc.edu/~ammirato/active_vision_dataset_website/index.html">Project Page</a>]</div> 
+</td>
+</tr> 
+</tbody></table>
+
+
+		<br>
+		<br>
+
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> Transformation-Grounded Image Generation Network for Novel 3D View Synthesis</div>
+<div class="description"> IEEE Conference on Computer Vision and Pattern Recognition ( CVPR 2017 )<br>
+<b>Eunbyung Park</b>, Jimei Yang, Ersin Yumer, Duygu Ceylan, Alexander C. Berg<br> </div>
+<div class="description"> [<a target="_blank" href="https://arxiv.org/abs/1703.02921">Paper</a>]
+[<a target="_blank" href="http://www.cs.unc.edu/~eunbyung/tvsn/">Project Page</a>]
+[<a target="_blank" href="https://github.com/silverbottlep/tvsn">Code</a>]</div>
+</td>
+</tr> 
+</tbody></table>
+
+
+		<br>
+		<br>
+
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> An Evaluation of the NVIDIA TX1 for Supporting Real-Time Computer Vision Workloads</div>
+<div class="description"> Real-Time and Embedded Technology and Applications Symposium ( RTAS 2017 )<br>
+Nathan Otterness, Ming Yang, Sarah Rust, <b>Eunbyung Park</b>, James H. Anderson, F. Donelson Smith, Alexander C. Berg, Shige Wang<br> </div>
+<div class="description"> [<a target="_blank" href="https://cs.unc.edu/~anderson/papers/rtas17b.pdf">Paper</a>]</div>
+</td>
+</tr> 
+</tbody></table>
+
+
+		<br>
+		<br>
+
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> Registration of Pathological Images</div>
+<div class="description"> Simulation an Synthesis in Medical Imaging ( MICCAI 2016 Workshop )<br>
+Xiao Yang, Xu Han, <b>Eunbyung Park</b>, Stephen Aylward, Roland Kwitt, Marc Niethammer<br> </div>
+<div class="description"> [<a target="_blank" href="http://wwwx.cs.unc.edu/~mn/sites/default/files/yang_miccai_2016_tumor.pdf">Paper</a>]</div>
+</td>
+</tr> 
+</tbody></table>
+
+
+		<br>
+		<br>
+
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> Learning to Decompose for Object Detection and Instance Segmentation</div>
+<div class="description"> International Conference on Learning Representations ( ICLR 2016 Workshop )<br>
+<b>Eunbyung Park</b>, Alexander C. Berg<br> </div>
+<div class="description"> [<a target="_blank" href="http://arxiv.org/abs/1511.06449">Paper</a>]</div>
+</td>
+</tr> 
+</tbody></table>
+
+
+		<br>
+		<br>
+
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> Combining Multiple Sources of Knowledge in Deep CNNs for Action Recognition</div>
+<div class="description"> IEEE Winter Conference on Applications of Computer Vision ( WACV 2016 )<br>
+<b>Eunbyung Park</b>, Xufeng Han, Tamara L. Berg, Alexander C. Berg<br> </div>
+<div class="description"> [<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/wacv2016_combining.pdf">Paper</a>]</div>
+</td>
+</tr> 
+</tbody></table>
+
+		<br>
+		<br>
+
+<table>
+<tbody><tr>
+<td class="thumb-column">
+</td>
+<td class="description-column">
+<div class="project-title"> Visual Madlibs: Fill-in-the-blank Image Description and Question Answering</div>
+<div class="description"> International Conference on Computer Vision ( ICCV 2015 )<br>
+Licheng Yu, <b>Eunbyung Park</b>, Alexander C. Berg, Tamara L. Berg<br> </div>
+<div class="description"> [<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/iccv15_madlibs.pdf">Paper</a>][<a target="_blank" href="http://tamaraberg.com/visualmadlibs/">Project Page</a>][<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/images/iccv15_madlibs.mp4">Spotlight Video</a>][<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/iccv15_madlibs_supp.pdf">Supplementary File</a>] </div>
+</td>
+</tr> 
+</tbody></table>
+
+
+</div>
+
+
+</body></html>
