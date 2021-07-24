@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+
+		<title>ICE3050 Deep Learning</title>
+
+		<link rel="canonical" href="https://silverbottlep.github.io/classes/fall2021/ice3050/">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/main.css" >
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<link rel="shortcut icon" href="/classes/fall2021/ice3050/images/skku_icon.png">
+
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+						tex2jax: {
+							inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+							processEscapes: true
+						}
+					});
+		</script>
+	</head>
+
+
+	<body>
+		<nav class="navbar">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/classes/fall2021/ice3050"><h1>ICE 3050 Deep Learning, Fall 2021</h1></a> </br>
+				<a class="navbar-brand" href="https://ice.skku.edu/ice/index.do"><h3>College of Information and Communication Engineering</h3></a> </br>
+				<a class="navbar-brand" href="https://www.skku.edu/skku/index.do"><h3>SungKyunKwan University</h3></a> </br>
+				<a class="navbar-brand"><h3>Time: TBD, Delivery Format: On/Offline Mixed</h3></a> </br>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="content">
+
+				<p><a name="info"></a></p>
+				<div>
+
+					<h2 id="course-description">Course Description</h2>
+
+					<p>Deep learning, which is considered as a subset of machine learning, is a core technology that has revolutionized entire Artificial Intelligence (AI) fields. It has achieved remarkable success in various applications, such as computer vision, natural language processing, speech recognition, robotics, biology, medicine, to name a few. This course will start from presenting the basic theory and practice of deep learning, and introduce rapidly changing techniques. This course also focuses on practical aspects of deep learning, which requires students to perform final course projects to gain a deeper knowledge through active exploration of various problems.</p>
+
+					<div class="row">
+						<div class="col-md-2">
+							<h3>Instructor</h3><br />
+							<div class="text-center">
+								<a href="https://silverbottlep.github.io/">
+									<img class="dp" src="images/eunbyung.jpg" /><br />
+									<p>Eunbyung Park</p>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-5">
+							<h3>Teaching Assistants</h3><br />
+							<div class="row">
+								<div class="col-sm col text-center">
+									<a href="https://silverbottlep.github.io/">
+										<img class="dp" src="images/skku.png" /><br />
+										<p>TBD</p>
+									</a>
+								</div>
+								<div class="col-sm col text-center">
+									<a href="https://silverbottlep.github.io/">
+										<img class="dp" src="images/skku.png" /><br />
+										<p>TBD</p>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<hr class="class-1" />
+				<p><a name="schedule"></a></p>
+				<div>
+					<h2 id="schedule">Schedule (Tentative)</h2>
+					<table class="table table-hover">
+						<thead>
+							<tr class="light-mod2">
+								<td style="width: 208px;">Date</td>
+								<td style="width: 380px;">Topic</td>
+								<td style="width: 400px;">Course Materials / Extra Reading</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Week 1 <br/> (08/30 - 09/03)</td>
+								<td>
+									Introduction / Motivation / Course Logistics <br/>
+									Linear Models / Multi-Layer Perceptron (MLP) <br/>
+								</td>
+								<td>
+									<ul>
+										<a href="http://www.nature.com/nature/journal/v521/n7553/pdf/nature14539.pdf">[LeCun et al., Nature '15]</a>
+									</ul>
+								</td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 2 <br/> (09/06 - 09/10)</td>
+								<td>
+									Automatic Differentiation / Backpropagation <br/>
+								</td>
+								<td></td>
+							</tr>
+							<tr class="">
+								<td>Week 3 <br/> (09/13 - 09/17)</td>
+								<td>
+									Optimization / Gradient Descent <br/>
+								</td>
+								<td></td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 4 <br/> (09/20 - 09/24)</td>
+								<td>
+									Convolutional Neural Networks 1 (CNN)
+								</td>
+								<td></td>
+							</tr>
+							<tr class="">
+								<td>Week 5 <br/> (09/27 - 10/01)</td>
+								<td>
+									Convolutional Neural Networks 2 (CNN)
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 6 <br/> (10/04 - 10/08)</td>
+								<td>
+									Recurrent Neural Networks (RNN)
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr class="">
+								<td>Week 7 <br/> (10/11 - 10/15)</td>
+								<td>
+                  Graph Neural Networks
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 8 <br/> (10/18 - 10/22)</td>
+								<td>
+									Transformers (Attentional Models)
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr class="">
+								<td>Week 9 <br/> (10/25 - 10/29)</td>
+								<td>
+									Generative Models 1 (GAN, VAE, Autoregressive Models)
+								</td>
+								<td></td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 10 <br/> (11/01 - 11/05)</td>
+								<td>
+									Generative Models 2 (GAN, VAE, Autoregressive Models)
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr class="">
+								<td>Week 11 <br/> (11/08 - 11/12)</td>
+								<td>
+									Self-supervised Learning
+								</td>
+								<td></td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 12 <br/> (11/15 - 11/19)</td>
+								<td>
+									Deep Reinforcement Learning
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Week 13 <br/> (11/22 - 11/26)</td>
+								<td>
+									AlphaGo, AlphaStar, AlphaFold
+								</td>
+								<td></td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 14 <br/> (11/29 - 11/03)</td>
+								<td>
+									Project Presentations
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Week 15 <br/> (12/06 - 12/10)</td>
+								<td>
+									Final Exam
+								</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<hr class="class-1" />
+				<p><a name="project"></a></p>
+				<div>
+
+					<h2 id="projects">Project</h2>
+
+          <p>
+          The class project is for you to gain in-depth knowledge of deep learning by making your hands dirty.
+          You will be a part of 2~3 person group to conduct a project during the semester.
+          You can choose whatever topics that excite you and the only restriction is that you should use deep learning to tackle the problems.
+          </p>
+
+				</div>
+
+				<hr class="class-1" />
+				<p><a name="grading"></a></p>
+				<div>
+
+					<h2 id="grading">Grading</h2>
+
+					Class attendance and participation - [10%] </br>
+									Homework - [20%] </br>
+									Final project - [30%] </br>
+									Final exam - [40%] </br>
+
+				</div>
+
+				<hr class="class-1" />
+				<p><a name="prereqs"></a></p>
+				<div>
+
+					<h2 id="prerequisites">Prerequisites</h2>
+
+					<p>ICE3050 does not require specific prerequisites, but ideally, previous exposure to following courses make you get most ouf of this course.</p>
+
+					<ul>
+						<li> Introduction to machine learning (ICE 3045 or equivalent) </li>
+						<li> Probatility (ICE 2003 or equivalent) </li>
+						<li> Calculus and Linear Algebra (GEDB001, GEDB002, GEDB003 or equivalents) </li>
+						<li> Programming (GEDT019, EEE2017 or equivalents) </li>
+					</ul>
+
+				</div>
+
+				<hr class="class-1" />
+				<p><a name="related"></a></p>
+				<div>
+					<h2 id="related-classes--online-resources">Related Courses and Materials</h2>
+					<ul>
+						<li><a href="http://cs231n.stanford.edu/">CS231n Convolutional Neural Networks for Visual Recognition, Stanford</a></li>
+						<li><a href="http://web.stanford.edu/class/cs224n/">CS224n: Natural Language Processing with Deep Learning, Stanford</a></li>
+						<li><a href="https://d2l.ai/">Dive into Deep Learning</a></li>
+						<li><a href="https://www.deeplearning.ai/">DeepLearning.AI</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- mathjax -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</body>
+</html>
