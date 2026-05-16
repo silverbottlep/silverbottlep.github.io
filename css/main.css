@@ -303,3 +303,131 @@ a:hover {
 .paper {
   margin: 0;
 }
+
+.teaching-year {
+  margin-bottom: 28px;
+}
+
+.teaching-year h3 {
+  border-bottom: 1px solid #e6e9ee;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 14px;
+  padding-bottom: 7px;
+}
+
+.course-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.course-card {
+  background: #fbfbfc;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(20, 24, 31, 0.06);
+  overflow: hidden;
+  text-align: left;
+}
+
+.course-copy {
+  padding: 15px 16px;
+}
+
+.course-term {
+  background: #eef3ff;
+  border: 1px solid #d9e4ff;
+  border-radius: 999px;
+  color: #2d5bb8;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
+  padding: 5px 9px;
+}
+
+.course-card h4 {
+  color: #222;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 6px;
+}
+
+.course-card p {
+  color: #555;
+  margin: 0;
+}
+
+.course-photo {
+  background: none;
+  border: 0;
+  cursor: zoom-in;
+  display: block;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.course-photo:focus {
+  outline: 2px solid #6f9cff;
+  outline-offset: -2px;
+}
+
+.course-photo::after {
+  background: rgba(0, 0, 0, 0.62);
+  border-radius: 999px;
+  bottom: 10px;
+  color: #fff;
+  content: "View larger";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0;
+  padding: 7px 10px;
+  position: absolute;
+  right: 10px;
+  transition: opacity 0.15s ease;
+}
+
+.course-photo:hover::after,
+.course-photo:focus::after {
+  opacity: 1;
+}
+
+.course-photo img {
+  aspect-ratio: 16 / 9;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.course-card-featured {
+  background: #fff;
+}
+
+.course-photo-modal .modal-dialog {
+  width: min(96vw, 1100px);
+}
+
+.course-photo-modal .modal-body {
+  padding: 0;
+}
+
+.course-photo-modal img {
+  display: block;
+  height: auto;
+  max-height: 82vh;
+  object-fit: contain;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+}
