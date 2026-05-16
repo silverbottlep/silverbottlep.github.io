@@ -266,6 +266,60 @@ a:hover {
   text-decoration: underline;
 }
 
+.navbar.navbar-inverse {
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid #e5e7eb;
+  border-radius: 0;
+  margin-bottom: 24px;
+  min-height: 52px;
+}
+
+.navbar.navbar-inverse .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar.navbar-inverse .navbar-brand {
+  color: #222;
+  font-weight: 700;
+}
+
+.navbar.navbar-inverse .navbar-brand:hover,
+.navbar.navbar-inverse .navbar-brand:focus {
+  color: #3467eb;
+}
+
+.navbar.navbar-inverse .navbar-nav > li > a {
+  color: #444;
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar.navbar-inverse .navbar-nav > li > a:hover,
+.navbar.navbar-inverse .navbar-nav > li > a:focus {
+  background: transparent;
+  color: #3467eb;
+  text-decoration: none;
+}
+
+.navbar.navbar-inverse .navbar-nav > .active > a,
+.navbar.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar.navbar-inverse .navbar-nav > .active > a:focus {
+  background: transparent;
+  color: #3467eb;
+}
+
+.navbar.navbar-inverse .navbar-nav > .active > a::after {
+  background: #3467eb;
+  bottom: 8px;
+  content: "";
+  height: 2px;
+  left: 15px;
+  position: absolute;
+  right: 15px;
+}
+
 #home{
   font-size: 12pt;
   font-family: 'Nunito', sans-serif;
