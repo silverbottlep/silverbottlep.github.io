@@ -485,7 +485,7 @@ a:hover {
   color: #333;
   font-size: 18px;
   font-weight: 700;
-  margin: 28px 0 12px;
+  margin: 24px 0 8px;
   padding-bottom: 7px;
 }
 
@@ -495,27 +495,29 @@ a:hover {
 
 .publications .list-group-item {
   background: #fff;
-  border: 1px solid #e4e7ec;
-  border-left: 3px solid #b9c8ee;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(20, 24, 31, 0.05);
+  border: 0;
+  border-bottom: 1px solid #edf0f4;
+  border-left: 3px solid #d7e0f5;
+  border-radius: 0;
+  box-shadow: none;
   display: block;
   list-style: none;
-  margin-bottom: 12px;
-  padding: 14px 16px 13px;
+  margin-bottom: 0;
+  padding: 8px 0 8px 12px;
 }
 
 .publications .paper {
   color: #555;
-  line-height: 1.45;
-  margin: 3px 0;
+  font-size: 14px;
+  line-height: 1.35;
+  margin: 2px 0;
 }
 
 .publications .paper:first-child {
   color: #222;
-  font-size: 16px;
-  line-height: 1.35;
-  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 1.3;
+  margin-bottom: 3px;
 }
 
 .publications .paper:first-child b {
@@ -532,9 +534,9 @@ a:hover {
   border-radius: 999px;
   color: #2d5bb8;
   display: inline-block;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1;
-  padding: 4px 8px;
+  padding: 3px 7px;
 }
 
 .publications .paper b[style] {
@@ -542,17 +544,17 @@ a:hover {
   border: 1px solid #ffd9ca;
   border-radius: 999px;
   display: inline-block;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1;
   margin-left: 4px;
-  padding: 4px 8px;
+  padding: 3px 7px;
 }
 
 .publications .paper-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
-  margin-top: 9px;
+  gap: 5px;
+  margin-top: 4px;
 }
 
 .publications .paper-links a {
@@ -561,10 +563,10 @@ a:hover {
   border-radius: 999px;
   color: #2f5fb3;
   display: inline-block;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   line-height: 1;
-  padding: 7px 10px;
+  padding: 4px 7px;
   text-decoration: none;
 }
 
