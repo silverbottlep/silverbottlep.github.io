@@ -25,7 +25,7 @@
   </div>
 </nav>
 
-  <div id="main">
+  <div id="main" class="publications">
         <h3>Preprints</h3>
                 <li class="list-group-item">
                 <p class="paper"><b>Group3D: MLLM-Driven Semantic Grouping for Open-Vocabulary 3D Object Detection</b></p> 
@@ -392,5 +392,13 @@
                 </li>
 
   </div>
+  <script>
+    $('.publications .paper').each(function () {
+      if ($(this).find('a').length) {
+        this.innerHTML = this.innerHTML.replace(/\[\s*/g, '').replace(/\s*\]/g, '');
+        $(this).addClass('paper-links');
+      }
+    });
+  </script>
 </body>
 </html>
