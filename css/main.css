@@ -417,6 +417,30 @@ a:hover {
   border-radius: 999px;
 }
 
+.home-main .timeline-list li {
+  align-items: baseline;
+  border-left: 0;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 150px 1fr;
+  margin-bottom: 9px;
+  padding: 0;
+}
+
+.timeline-date {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.timeline-role {
+  border-left: 3px solid #d8e2f8;
+  color: #333;
+  display: block;
+  padding-left: 12px;
+}
+
 .publications {
   text-align: left;
 }
@@ -640,6 +664,15 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .home-main .timeline-list li {
+    gap: 4px;
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-role {
+    padding-left: 10px;
+  }
+
   .course-grid {
     grid-template-columns: 1fr;
   }
