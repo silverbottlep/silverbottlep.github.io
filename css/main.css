@@ -324,26 +324,61 @@ a:hover {
   font-size: 12pt;
   font-family: 'Nunito', sans-serif;
   display: flex;
+  gap: 28px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px auto;
-  margin-bottom: 30px; /* TODO Ask if wanted */
+  margin: 18px auto 38px;
 }
 
 #bio {
   text-align: center;
   display: inline-block;
   vertical-align: middle;
-  margin: 10px auto;
+  margin: 8px auto;
+}
+
+.home-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.home-links a {
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #d7dde8;
+  border-radius: 50%;
+  color: #222;
+  display: inline-flex;
+  height: 38px;
+  justify-content: center;
+  text-decoration: none;
+  width: 38px;
+}
+
+.home-links a:hover,
+.home-links a:focus {
+  background: #eef3ff;
+  border-color: #b8caff;
+  color: #3467eb;
+  text-decoration: none;
+}
+
+.home-links i {
+  font-size: 20px;
 }
 
 #photo {
   border-radius: 50%;
+  border: 1px solid #e4e7ec;
+  box-shadow: 0 8px 20px rgba(20, 24, 31, 0.12);
   width: 200px;
   display: inline-block;
   vertical-align: middle;
-  margin: 10px auto;
+  margin: 8px auto;
+  padding: 4px;
 }
 
 #main{
@@ -664,6 +699,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  #home {
+    gap: 18px;
+    margin-top: 8px;
+  }
+
   .home-main .timeline-list li {
     gap: 4px;
     grid-template-columns: 1fr;
