@@ -493,6 +493,70 @@ a:hover {
   margin-top: 0;
 }
 
+.publications .collapsible-summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.publications .collapsible-summary::-webkit-details-marker {
+  display: none;
+}
+
+.publications .collapsible-summary h3 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.publications .collapsible-summary h3::before {
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid #9aa4b2;
+  border-top: 5px solid transparent;
+  content: "";
+  flex: none;
+  transition: transform 0.15s ease;
+}
+
+.publications .collapsible-section[open] > .collapsible-summary h3::before {
+  transform: rotate(90deg);
+}
+
+.publications .collapsible-summary:hover h3,
+.publications .collapsible-summary:hover h3::before {
+  border-left-color: #3467eb;
+  color: #3467eb;
+}
+
+.publications .collapsible-summary:focus-visible h3 {
+  outline: 2px solid #6f9cff;
+  outline-offset: 3px;
+}
+
+/* Heading margins collapse away inside <summary>, so space the sections here. */
+.publications .collapsible-section {
+  margin-top: 24px;
+}
+
+.publications .collapsible-section:first-child {
+  margin-top: 0;
+}
+
+.publications .collapsible-section[open] > .collapsible-body {
+  animation: section-reveal 0.18s ease;
+}
+
+@keyframes section-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .publications .list-group-item {
   background: #fff;
   border: 0;

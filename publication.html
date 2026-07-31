@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data/silver-bottle-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css?v=20260516">
+  <link rel="stylesheet" href="css/main.css?v=20260731">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -28,9 +28,13 @@
 </nav>
 
   <div id="main" class="publications">
-        <h3>Preprints</h3>
+        <details class="collapsible-section" id="preprints">
+        <summary class="collapsible-summary">
+          <h3>Preprints</h3>
+        </summary>
+        <div class="collapsible-body">
                 <li class="list-group-item">
-                <p class="paper"><b>Scenes as Objects, Not Primitives: Instance-Structured 3D Tokenization from Unposed Views</b></p> 
+                <p class="paper"><b>Scenes as Objects, Not Primitives: Instance-Structured 3D Tokenization from Unposed Views</b></p>
                 <p class="paper">Mijin Yoo, In Cho, Subin Jeon, Jiwoo Lee, Eunbyung Park, Seon Joo Kim</p>
                 <p class="paper">arXiv:2606.29513</p>
                 <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2606.29513">Paper</a>] [<a target="_blank" href="https://yoomimi.github.io/instok3d/">Project Page</a>] [<a target="_blank" href="">Code</a>]</p>
@@ -95,7 +99,13 @@
                 <p class="paper">arXiv:2412.04591</p>
                 <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2412.04591">Paper</a>] [<a target="_blank" href="https://benhenryl.github.io/Metalens-Transformer/">Project Page</a>] [<a target="_blank" href="https://github.com/benhenryL/MetaFormer">Code</a>]</p>
                 </li>
-        <h3>2026</h3>
+        </div>
+        </details>
+        <details class="collapsible-section" id="y2026" open>
+        <summary class="collapsible-summary">
+          <h3>2026</h3>
+        </summary>
+        <div class="collapsible-body">
                 <li class="list-group-item">
                 <p class="paper"><b>ACA-GS: Adaptive-Capacity Anchored Gaussian Splatting for Compact Dynamic Radiance Fields</b></p> 
                 <p class="paper">Seunghyeon Song, Joo Chan Lee, Chanung Park, Jun Young Jeong, Minseo Lee, Eunbyung Park, Jong Hwan Ko </p>
@@ -162,7 +172,13 @@
                 <p class="paper">The IEEE/CVF Winter Conference on Applications of Computer Vision, <b>WACV 2026</b></p>
                 <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2507.22407">Paper</a>] [<a target="_blank" href="https://sngryonglee.github.io/MoireZero/">Project Page</a>] [<a target="_blank" href="https://github.com/sngryongLee/Moire-Zero">Code</a>]</p>
                 </li>
-        <h3>2025</h3>
+        </div>
+        </details>
+        <details class="collapsible-section" id="y2025" open>
+        <summary class="collapsible-summary">
+          <h3>2025</h3>
+        </summary>
+        <div class="collapsible-body">
                 <li class="list-group-item">
                 <p class="paper"><b>Optimized Minimal 3D Gaussian Splatting</b></p> 
                 <p class="paper">Joo Chan Lee, Jong Hwan Ko†, Eunbyung Park†</p>
@@ -224,7 +240,13 @@
                 <p class="paper">The 39th AAAI Conference on Artificial Intelligence, <b>AAAI 2025</b></p>
                 <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2404.04913">Paper</a>] [<a target="_blank" href="https://gynjn.github.io/CodecNeRF/">Project Page</a>] [<a target="_blank" href="https://github.com/Gynjn/CodecNeRF">Code</a>]</p>
                 </li>
-        <h3>2024</h3>
+        </div>
+        </details>
+        <details class="collapsible-section" id="y2024" open>
+        <summary class="collapsible-summary">
+          <h3>2024</h3>
+        </summary>
+        <div class="collapsible-body">
                 <li class="list-group-item">
                 <p class="paper"><b>Parameter-Efficient Instance-Adaptive Neural Video Compression</b></p> 
                 <p class="paper">Seungjun Oh*, Hyunmo Yang, Eunbyung Park</p>
@@ -292,7 +314,13 @@
                 <p class="paper"><b>Neural Networks, Elsevier, 2024</b></p>
                 <p class="paper">[<a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0893608024003381">Paper</a>] [<a target="_blank" href="https://github.com/extremebird/Hydra">Code</a>]</p>
                 </li>
-        <h3>2023</h3>
+        </div>
+        </details>
+        <details class="collapsible-section" id="y2023" open>
+        <summary class="collapsible-summary">
+          <h3>2023</h3>
+        </summary>
+        <div class="collapsible-body">
                 <li class="list-group-item">
                 <p class="paper"><b>Mip-Grid: Anti-aliased Grid Representations for Neural Radiance Fields</b></p> 
                 <p class="paper">Seungtae Nam, Daniel Rho, Jong Hwan Ko, Eunbyung Park</p>
@@ -330,7 +358,13 @@
                 <p class="paper"><a target="_blank" href="https://dlde-2022.github.io/">The Symbiosis of Deep Learning and Differential Equations</a>, <b>NeurIPS 2022 Workshop</b> <b style="color:#C34A2C">Spotlight!</b></p>
                 <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2207.12800">Paper</a>] [<a target="_blank" href="https://namgyukang.github.io/PIXEL/">Project Page</a>] [<a target="_blank" href="https://github.com/NamGyuKang/PIXEL">Code</a>]</p>
                 </li>
-        <h3>2022</h3>
+        </div>
+        </details>
+        <details class="collapsible-section" id="y2022" open>
+        <summary class="collapsible-summary">
+          <h3>2022</h3>
+        </summary>
+        <div class="collapsible-body">
                 <li class="list-group-item">
                 <p class="paper"><b>Streamable Neural Fields</b></p>
                 <p class="paper">Junwoo Cho*, Seungtae Nam*, Daniel Rho, Jong Hwan Ko, Eunbyung Park</p>
@@ -343,7 +377,13 @@
                 <p class="paper">The Asian Conference on Computer Vision, <b>ACCV 2022</b></p>
                 <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2201.04329">Paper</a>] [<a target="_blank" href="https://github.com/daniel03c1/eff_video_representation">Code</a>]</p>
                 </li>
-        <h3>Before 2022</h3>
+        </div>
+        </details>
+        <details class="collapsible-section" id="before-2022" open>
+        <summary class="collapsible-summary">
+          <h3>Before 2022</h3>
+        </summary>
+        <div class="collapsible-body">
                 <li class="list-group-item">
                 <p class="paper"><b>Rotationally-Temporally Consistent Novel View Synthesis of Human Performance Video</b></p>
                 <p class="paper">YoungJoong Kwon, Stefano Petrangeli, Dahun Kim, Haoliang Wang, Eunbyung Park, Vishy Swaminathan, Henry Fuchs</p>
@@ -414,8 +454,10 @@
                 <p class="paper"><b>Visual Madlibs: Fill-in-the-blank Image Description and Question Answering</b></p>
                 <p class="paper">Licheng Yu, Eunbyung Park, Alexander C. Berg, Tamara L. Berg</p>
                 <p class="paper">International Conference on Computer Vision, <b>ICCV 2015</b></p>
-                <p class="paper"> <div class="description"> [<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/iccv15_madlibs.pdf">Paper</a>][<a target="_blank" href="http://tamaraberg.com/visualmadlibs/">Project Page</a>][<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/images/iccv15_madlibs.mp4">Spotlight Video</a>][<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/iccv15_madlibs_supp.pdf">Supplementary File</a>] </p>
+                <p class="paper">[<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/iccv15_madlibs.pdf">Paper</a>][<a target="_blank" href="http://tamaraberg.com/visualmadlibs/">Project Page</a>][<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/images/iccv15_madlibs.mp4">Spotlight Video</a>][<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/iccv15_madlibs_supp.pdf">Supplementary File</a>] </p>
                 </li>
+        </div>
+        </details>
 
   </div>
   <script>
